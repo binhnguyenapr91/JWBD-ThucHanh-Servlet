@@ -7,10 +7,27 @@
 <body>
 <form method="post" action="/login">
   <div class="login">
-    <h2>Login</h2>
+    <h2>Login Form</h2>
     <input type="text" name="username" size="30"  placeholder="username" />
     <input type="password" name="password" size="30" placeholder="password" />
     <input type="submit" value="Sign in"/>
+  </div>
+</form>
+
+<form method="get" action="/convert">
+  <div class="convert">
+    <h2>Currency Convert</h2>
+    <input type="text" name="usd" size="30"  placeholder="usd" />
+    <input type="text" name="rate" size="30" placeholder="rate" />
+    <input type="submit" value="Convert"/>
+  </div>
+</form>
+
+<form method="get" action="/search">
+  <div class="search">
+    <h2>Mini Dictionary</h2>
+    <input type="text" name="english" size="30"  placeholder="english" />
+    <input type="submit" value="Search"/>
   </div>
 </form>
 </body>
