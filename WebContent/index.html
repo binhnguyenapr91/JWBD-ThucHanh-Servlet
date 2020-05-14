@@ -5,33 +5,63 @@
 <title>Apps Form</title>
 </head>
 <body>
-<div id="container">
-<form method="post" action="/login">
-  <div class="form">
-    <h2>Login Form</h2>
-    <input type="text" name="username" size="30"  placeholder="username" /></br>
-    <input type="password" name="password" size="30" placeholder="password" /></br>
-    <input type="submit" value="Sign in"/>
-  </div>
-</form>
+	<div id="container">
+		<h1>Using Servlet</h1>
+		<form method="post" action="/login">
+			<div class="form">
+				<h2>Login Form</h2>
+				<input type="text" name="username" size="30" placeholder="username" /></br>
+				<input type="password" name="password" size="30"
+					placeholder="password" /></br> <input type="submit" value="Sign in" />
+			</div>
+		</form>
 
-<form method="get" action="/convert">
-  <div class="form">
-    <h2>Currency Convert</h2>
-    <input type="text" name="usd" size="30"  placeholder="usd" /></br>
-    <input type="text" name="rate" size="30" placeholder="rate" /></br>
-    <input type="submit" value="Convert"/>
-  </div>
-</form>
+		<form method="get" action="/convert">
+			<div class="form">
+				<h2>Currency Convert</h2>
+				<input type="text" name="usd" size="30" placeholder="usd" /></br> <input
+					type="text" name="rate" size="30" placeholder="rate" /></br> <input
+					type="submit" value="Convert" />
+			</div>
+		</form>
 
-<form method="get" action="/search">
-  <div class="form">
-    <h2>Mini Dictionary</h2>
-    <input type="text" name="english" size="30"  placeholder="english" /></br>
-    <input type="submit" value="Search"/>
-  </div>
-</form>
-</div>
-<link rel="stylesheet" href="/css/style.css">
+		<form method="get" action="/search">
+			<div class="form">
+				<h2>Mini Dictionary</h2>
+				<input type="text" name="english" size="30" placeholder="english" /></br>
+				<input type="submit" value="Search" />
+			</div>
+		</form>
+		</br>
+		<h1>Using JSP</h1>
+		<form method="post" action="/login">
+			<div class="form">
+				<h2>Login Form</h2>
+				<input type="text" name="username" size="30" placeholder="username" /></br>
+				<input type="password" name="password" size="30"
+					placeholder="password" /></br> <input type="submit" value="Sign in" />
+			</div>
+		</form>
+
+		<form method="post" action="convert.jsp">
+			<div class="form">
+				<h2>Currency Convert</h2>
+				<input type="text" name="usd" size="30" placeholder="usd" /></br> <input
+					type="text" name="rate" size="30" placeholder="rate" /></br> <input
+					type="submit" value="Convert" />
+			</div>
+		</form>
+
+		<form method="get" action="search.jsp">
+			<div class="form">
+				<h2>Mini Dictionary</h2>
+				<input type="text" name="english" size="30" placeholder="english" /></br>
+				<input type="submit" value="Search" />
+			</div>
+		</form>
+	</div>
+
+	</div>
+	<link rel="stylesheet" href="/css/style.css">
 </body>
 </html>
